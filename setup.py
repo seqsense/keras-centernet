@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='keras-centernet',
@@ -6,7 +6,7 @@ setup(
     description='Keras implementation for CenterNet',
     url='https://github.com/seqsense/keras-centernet',
     author='SEQSENSE',
-    packages=['keras_centernet'],
+    packages=find_packages(),
     install_requires=[
         'Keras>=2.2.4',
         'opencv-python>=3.4.3.18',
